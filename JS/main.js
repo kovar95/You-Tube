@@ -7,7 +7,7 @@ var videoList = document.querySelector(".video-list");
 var pages = document.querySelector(".main-wrapper .pagination");
 var message = document.querySelector(".message");
 
-var key = "AIzaSyCQl6uGkd-u0hST_9M1gc__TZtjQ4Gq9Lc";
+var key = "AIzaSyAChgDP04ee0_gLIeMprFt2Ux6ARmQl0w8";
 
 function loading() {
 	loader.style.display = "block";
