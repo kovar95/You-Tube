@@ -10,7 +10,7 @@ body {
 }
 
 body h4 {
-    position: fixed;
+    position: absolute;
     right: 210px;
     top: 55px;
     color: black;
@@ -22,7 +22,7 @@ body .loader {
     width: 200px;
     position: fixed;
     top: 200px;
-    left: 700px;
+    left: 42%;
 }
 
 h3 {
@@ -97,10 +97,12 @@ main div.main-wrapper {
 main div.main-wrapper section.message {
 	margin-top: 180px;
 	text-align: center;
+    position: absolute;
+    left: 36%;
 }
 
 main section.video-list {
-	padding: 60px 0;
+	padding: 60px 20px;
 }
 
 main section.video-list  h3{
@@ -113,16 +115,26 @@ main section.video-list > div {
 }
 
 main section.video-list > div > section {
-	width: 520px;
+	width: 480px;
 }
 
 main section.video-list > div > img {
 	margin-right: 20px;
 	cursor: pointer;
+	width: 320px;
+	height: 180px;
 }
 
 main section.video-preview {
-	padding-top: 60px;
+	padding: 60px 5px 5px 20px;
+}
+
+body div.related-videos {
+    position: absolute;
+    width: 304px;
+    height: 592px;
+    top: 100px;
+    right: 10px;
 }
 
 div.related-videos > div {
@@ -179,10 +191,27 @@ main div.pagination span:hover {
 	background-color: #fe7171;
 }
 
-body div.related-videos {
-    position: fixed;
-    width: 304px;
-    height: 592px;
-    top: 100px;
-    right: 10px;
+
+
+@media screen and (max-width: 1440px) {
+	body div.related-videos {
+	    top: 615px;
+	}
+
+	body h4 {
+		top: 560px;
+	}
+
+	main section.video-list > div{
+	    flex-direction: column;
+	}
+
+	main section.video-list > div > section {
+	    width: 320px;
+	    margin: 10px 0 10px 0;
+	}
+
+	main div.main-wrapper {
+	    align-items: center;
+	}
 }
