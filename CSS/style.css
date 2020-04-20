@@ -36,6 +36,7 @@ header {
 	position: fixed;
 	width: 100%;
 	height: 62px;
+	z-index: 2;
 }
 
 .main-wrapper {
@@ -120,6 +121,7 @@ main section.video-list  h3{
 main section.video-list > div {
 	display: flex;
 	margin-bottom: 20px;
+	margin-right: 10px;
 }
 
 main section.video-list > div > section {
@@ -241,10 +243,25 @@ main div.pagination span:hover {
 	}
 
 	body div.related-videos {
-		display: none;
+	    width: 160px;
+	    right: -100px;
 	}
 
 	body h4 {
-		display: none;
+		right: -50px;
 	}
+}
+
+
+@media screen and (max-width: 500px) {
+
+	body div.related-videos {
+	    right: -315px;
+	}
+
+	body h4 {
+		right: -260px;
+	}
+
+
 }
