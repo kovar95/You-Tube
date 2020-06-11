@@ -7,7 +7,7 @@ const videoList = document.querySelector(".video-list");
 const pages = document.querySelector(".main-wrapper .pagination");
 const message = document.querySelector(".message");
 
-const key = "AIzaSyCsVbQbUDtXdqCDSjGLRC5R04RcG0N5hz8";
+const key = "AIzaSyDTpzSeyuVCu7vKXlAS150avxdakf4BP8E";
 
 const loading = ()=> {
 	loader.style.display = "block";
